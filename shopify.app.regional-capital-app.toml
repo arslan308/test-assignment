@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "regional-capital-app"
+client_id = "bc8eb6b6fb97cfc544949b1763ae7649"
+application_url = "https://structural-self-blah-attitude.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products,read_script_tags,write_script_tags,read_themes,write_themes,read_orders,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://structural-self-blah-attitude.trycloudflare.com/auth/callback",
+  "https://structural-self-blah-attitude.trycloudflare.com/auth/shopify/callback",
+  "https://structural-self-blah-attitude.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shipping-quotes.myshopify.com"
